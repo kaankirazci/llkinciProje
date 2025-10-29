@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Join Our Community</title>
+
+    <style>
+      body {
+        background-color: #e0f0f6; 
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .card {
+        background-color: white;
+        width: 700px;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .top {
+        padding: 30px;
+      }
+
+      .top h2 {
+        color: #2bb3b1;
+        margin: 0 0 30px 0;
+      }
+
+      .top h3 {
+        color: #bfdf32;
+        margin: 0 0 10px 0;
+        font-weight: normal;
+      }
+
+      .top p {
+        color: #a0a0a0;
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 0;
+        opacity: 0.6;
+      }
+
+      .bottom {
+        display: flex;
+      }
+
+      .left {
+        background-color: #2bb3b1;
+        color: white;
+        flex: 1;
+        padding: 30px;
+      }
+
+      .left h3 {
+        margin-top: 0;
+        font-size: 18px;
+      }
+
+      .price {
+        font-size: 30px !important;
+        font-weight: bold;
+      }
+
+      .price span {
+        font-size: 15px;
+        font-weight: normal;
+        opacity: 0.6;
+        position: relative;
+        top: -5px
+      }
+
+      .left p {
+        font-size: 14px;
+        opacity: 0.9;
+        margin: 10px 0 20px 0;
+      }
+
+      .btn {
+        background-color: #bfdf32;
+        color: #2bb3b1;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        padding: 12px 20px;
+        width: 100%;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #a3c52c;
+      }
+
+      .right {
+        background-color: #4abebd;
+        color: white;
+        flex: 1;
+        padding: 30px;
+      }
+
+      .right h3 {
+        margin-top: 0;
+        font-size: 18px;
+      }
+
+      .right ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        opacity: 0.6;
+      }
+
+      .right li {
+        margin: 5px 0;
+      }
+
+      @media (max-width: 700px) {
+        .card {
+          width: 90%;
+        }
+
+        .bottom {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="top">
+        <h2>Join our community</h2>
+        <h3>30-day, hassle-free money back guarantee</h3>
+        <p>
+          Gain access to our full library of tutorials along with expert code reviews.
+          Perfect for any developers who are serious about honing their skills.
+        </p>
+      </div>
+
+      <div class="bottom">
+        <div class="left">
+          <h3>Monthly Subscription</h3>
+          <p class="price">$29 <span>per month</span></p>
+          <p>Full access for less than $1 a day</p>
+          <button class="btn">Sign Up</button>
+        </div>
+
+        <div class="right">
+          <h3>Why Us</h3>
+          <ul>
+            <li>Tutorials by industry experts</li>
+            <li>Peer &amp; expert code review</li>
+            <li>Coding exercises</li>
+            <li>Access to our GitHub repos</li>
+            <li>Community forum</li>
+            <li>Flashcard decks</li>
+            <li>New videos every week</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

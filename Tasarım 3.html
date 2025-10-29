@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sonuç Kartı</title>
+
+    <style>
+      
+      body {
+        background-color: #e0e8ff; 
+        display: flex;            
+        justify-content: center;
+        align-items: center;
+        height: 100vh;             
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+
+      
+      .card {
+        display: flex;             
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;          
+        max-width: 650px;
+      }
+
+      
+      .left {
+        background: linear-gradient(180deg, #7857ff, #2e2be9); 
+        color: white;
+        flex: 1;                     
+        text-align: center;
+        padding: 30px;
+      }
+
+      .left h2 {
+        font-size: 18px;
+        color: #c5c5ff;
+      }
+
+      .score {
+        background: linear-gradient(180deg, #4e21ca, #2421ca);
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .score h1 {
+        font-size: 40px;
+        margin: 0;
+      }
+
+      .score p {
+        margin: 0;
+        font-size: 12px;
+        color: #c5c5ff;
+      }
+
+      .left h3 {
+        margin-top: 10px;
+        font-size: 22px;
+      }
+
+      .left p {
+        font-size: 14px;
+        color: #c5c5ff;
+      }
+
+     
+      .right {
+        flex: 1;
+        padding: 30px;
+      }
+
+      .right h2 {
+        font-size: 18px;
+        color: #1f3251;
+      }
+
+      
+      .result {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 8px 0;
+        font-weight: bold;
+      }
+
+      .reaction {
+        background-color: #fff6f6;
+        color: #e67b7b;
+      }
+      .memory {
+        background-color: #fff8e6;
+        color: #e7b21e;
+      }
+      .verbal {
+        background-color: #f0fffb;
+        color: #3bbca1;
+      }
+      .visual {
+        background-color: #f3f3ff;
+        color: #4040d0;
+      }
+
+      
+      .btn {
+        background-color: #303b5a;
+        color: white;
+        border: none;
+        width: 100%;
+        padding: 12px;
+        border-radius: 30px;
+        margin-top: 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: #4e5ba3;
+      }
+
+      
+      @media (max-width: 700px) {
+        .card {
+          flex-direction: column;
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card">
+      
+      <div class="left">
+        <h2>Your Result</h2>
+        <div class="score">
+          <h1>76</h1>
+          <p>of 100</p>
+        </div>
+        <h3>Great</h3>
+        <p>You scored higher than 65% of the people who took this test.</p>
+      </div>
+
+      
+      <div class="right">
+        <h2>Summary</h2>
+
+        <div class="result reaction">
+          <span>⚡ Reaction</span>
+          <span>80 / 100</span>
+        </div>
+
+        <div class="result memory">
+          <span>🧠 Memory</span>
+          <span>92 / 100</span>
+        </div>
+
+        <div class="result verbal">
+          <span>💬 Verbal</span>
+          <span>61 / 100</span>
+        </div>
+
+        <div class="result visual">
+          <span>👁️ Visual</span>
+          <span>73 / 100</span>
+        </div>
+
+        <button class="btn">Continue</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil Kartı</title> 
+
+  <style>
+    body {
+      background-color: #0ea5a8; 
+      height: 100vh; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+    }
+
+    .card {
+      background-color: white; 
+      width: 300px; 
+      border-radius: 15px; 
+      text-align: center; 
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2); 
+      overflow: hidden; 
+      height: 290px;
+    }
+
+    .top {
+      background-color: #14b8b8; 
+      height: 120px; 
+      position: relative; 
+    }
+
+    .profile-img {
+      width: 80px; 
+      height: 90px; 
+      border-radius: 50%; 
+      border: 4px solid white; 
+      position: absolute; 
+      bottom: -40px; 
+      left: 50%; 
+      transform: translateX(-50%); 
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .info {
+      margin-top: 50px; 
+    }
+
+    .name {
+      font-weight: bold; 
+      font-size: 18px; 
+    }
+
+    .age {
+      color: gray; 
+      font-size: 14px;
+    }
+
+    .city {
+      color: gray; 
+      font-size: 14px;
+      margin-top: 5px; 
+      height: 30px;
+    }
+
+    .stats {
+      display: flex; 
+      justify-content: space-around; 
+      border-top: 1px solid #ddd; 
+      padding: 15px 0; 
+    }
+
+    .number {
+      font-weight: bold; 
+    }
+
+    .label {
+      color: gray; 
+      font-size: 12px; 
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="top">
+      <img class="profile-img"
+        src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOcvBbIBquhC0Szlr1l0iBwo_SmW8S39Mf-8y-4Z6UZ4uDiJs05n7rSkTqZULqVWtrZR97Fg0-7JgddwjaGCazazclXwJjr4tx96soL2HCtw"
+        alt="Profile Picture">
+    </div>
+
+    <div class="info">
+      <div class="name">Mauro İcardi <span class="age">32</span></div>
+      <div class="city">Argentina</div>
+    </div>
+
+    <div class="stats">
+      <div>
+        <div class="number">10.5M</div>
+        <div class="label">Followers</div>
+      </div>
+      <div>
+        <div class="number">803M</div>
+        <div class="label">Likes</div>
+      </div>
+      <div>
+        <div class="number">1.4K</div>
+        <div class="label">Photos</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

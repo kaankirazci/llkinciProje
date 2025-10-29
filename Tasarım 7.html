@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Four card</title>
+</head>
+<style>
+body {
+    background-color: rgb(242, 234, 234) !important;
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #7f828b;
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+    top: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #3f424d;
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+    top: -15px;
+    font-weight: bold;
+}
+
+p {
+    margin: 0 auto 50px;
+    max-width: 500px;
+    color: rgb(139, 134, 134);
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 350px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    height: 250px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: rgb(57, 53, 53);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+.card p {
+    font-size: 20px;
+    color: rgb(122, 96, 96);
+    opacity: 0.7;
+    margin-left: -10px;
+    position: relative;
+    top: -20px;
+    text-align: left;
+    margin-left: 1px;
+}
+
+.red {
+    border-top: 4px solid #ea5353;
+}
+.cyan {
+    border-top: 4px solid #45c3c3;
+}
+.orange {
+    border-top: 4px solid orange;
+}
+.blue {
+    border-top: 4px solid #007bff;
+}
+.icon {
+    text-align: right;
+    font-size: 80px;
+    margin-top: 10px;
+    position: relative;
+    top: -20px;
+}
+    </style>
+</head>
+<body>
+    <h1>Reliable, efficient delivery</h1>
+    <h2><strong>Powered by Technology</strong></h2>
+    <p>Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
+    </p>
+    <div class="container">
+        <div class="card cyan supervisor">
+            <h3>Supervisor</h3>
+            <p>Monitors activity to identify project roadblocks</p>
+            <div class="icon">🔎</div>
+        </div>
+
+        <div class="card red">
+            <h3>Team Builder</h3>
+            <p>Scans our talent network to create the optimal team for your project</p>
+            <div class="icon">🏡</div>        
+    </div>
+        <div class="card orange karma">
+            <h3>Karma</h3>
+            <p>Regularly evaluates our talent to ensure quality</p>
+            <div class="icon">💡</div>
+        </div>
+
+        <div class="card blue">
+            <h3>Calculator</h3>
+            <p>Uses data from past projects to provide better delivery estimates</p>
+            <div class="icon">🖥️</div>
+        </div>
+</body>
+</html>

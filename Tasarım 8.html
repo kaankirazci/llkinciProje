@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Huddle</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      color:#fff;
+      background: linear-gradient(135deg,#6a48d7,#8a3ac8);
+    }
+
+    .header{
+      max-width: 1100px;
+      margin: 24px auto;
+      padding: 0 16px;
+      font-weight: 800;
+      font-size: 28px;
+    }
+
+    .icon{
+        font-size: 45px;
+        position: relative;
+        top: -505px;
+        margin-left: 245px;
+    }
+
+    .hero{
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px;
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      flex-wrap: wrap;          
+    }
+
+    .mock{
+      position: relative;
+      flex: 1 1 520px;          
+      min-width: 280px;
+    }
+    .panel{
+      background: #fff;
+      color: #333;
+      border-radius: 14px;
+      box-shadow: 0 12px 24px rgba(0,0,0,.2);
+      padding: 18px;
+    }
+    .panel.big{
+      height: 350px;
+      border-top: 14px solid #0b2b33;
+      position: relative;
+      margin-right: 35px;
+      width: 550px;
+      margin-left: -45px;
+    }
+    .panel.small{
+      width: 170px; height: 280px;
+      border-top: 14px solid #0b2b33;
+      position: absolute; right: 0px; bottom: -70px; ;
+    }
+    .row{ display:flex; align-items:center; gap:12px; margin:14px 0; }
+    .dot{ width:24px; height:24px; border-radius:50%;
+          background: radial-gradient(circle at 30% 30%, #ff9fd8, #ff7b6e 40%, #ffb36d); }
+    .dot.blue{ background: radial-gradient(circle at 30% 30%, #7cd1ff, #2aa3ff 45%, #6aa8ff); }
+    .line{ flex:1; height:10px; border-radius:5px; background:#e7edf3; width: 100%; }
+
+    .copy{
+      flex: 1 1 360px;
+      min-width: 280px;
+    }
+    .copy h1{
+      margin: 0 0 12px;
+      font-size: 35px;
+      line-height: 1.4;
+      font-weight: 800;
+      position: relative;
+      top: -10px;
+    }
+    .copy p{
+      margin: 8px 0 24px;
+      color: #e9ddfb;          
+      line-height: 1.5;
+    }
+    .btn{
+      background:#fff;
+      color:#6a48d7;
+      border:0;
+      padding: 14px 28px;
+      border-radius: 28px;
+      font-weight: 700;
+      box-shadow: 0 12px 24px rgba(0,0,0,.25);
+      cursor:pointer;
+      width: 150px;
+      font-size: 17px !important;
+    }
+    .btn:hover{ filter: brightness(.95); }
+
+    .social{
+      max-width:1100px; margin: 25px auto 32px; padding: 0 16px;
+      display:flex; gap:12px; justify-content:flex-end;
+    }
+    .social a{
+      width:36px; height:36px; border-radius:50%;
+      border:2px solid #fff; color:#fff; text-decoration:none;
+      display:grid; place-items:center;
+      font-weight:800;
+      font-size: 25px;
+    }
+
+    @media (max-width: 900px){
+      .hero{ justify-content: center; text-align:center; }
+      .social{ justify-content:center; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">Huddle</div>
+
+  <section class="hero">
+    <div class="mock" aria-hidden="true">
+      <div class="panel big">
+        <div class="row"><span class="dot"></span><span class="line"></span></div>
+        <div class="row"><span class="dot blue"></span><span class="line"></span></div>
+        <div class="row"><span class="dot"></span><span class="line"></span></div>
+        <div class="row"><span class="dot blue"></span><span class="line"></span></div>
+        <div class="row"><span class="dot"></span><span class="line"></span></div>
+        <div class="row"><span class="dot blue"></span><span class="line"></span></div>
+        <div class="row"><span class="dot"></span><span class="line"></span></div>
+        <div class="row"><span class="dot blue"></span><span class="line"></span></div>
+        <div class="row"><span class="dot"></span><span class="line"></span></div>
+      </div>
+      <div class="panel small">
+        <div class="row"><span class="dot"></span><span class="line"></span></div>
+        <div class="row"><span class="dot blue"></span><span class="line"></span></div>
+        <div class="row"><span class="dot"></span><span class="line"></span></div>
+        <div class="row"><span class="dot blue"></span><span class="line"></span></div>
+        <div class="row"><span class="dot"></span><span class="line"></span></div>
+        <div class="row"><span class="dot blue"></span><span class="line"></span></div>
+        <div class="row"><span class="dot"></span><span class="line"></span></div>
+      </div>
+    </div>
+
+    <div class="copy">
+      <h1>Build The Community<br> Your Fans Will Love</h1>
+      <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+      <button class="btn">Register</button>
+    </div>
+  </section>
+     <div class="icon">💬</div>
+  <nav class="social" aria-label="Sosyal">
+    <a href="#">𝐟</a>
+    <a href="#">𝕏</a>
+    <a href="#">🅾</a>
+  </nav>
+
+</body>
+</html>
